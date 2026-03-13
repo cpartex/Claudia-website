@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Dierenartsenpraktijk Claudia Gorissen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--soft:#FDBCB4;
+--accent:#FF6D2D;
+--light:#c0d0e0;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:"Google Sans Flex",system-ui;
+background:var(--light);
+color:#333;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:14px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+z-index:100;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+nav a:hover{
+color:var(--accent);
+}
+
+/* HERO */
+
+.hero{
+
+min-height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(var(--light),var(--soft));
+padding:80px 20px;
+}
+
+.logo{
+width:160px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:2rem;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:600px;
+opacity:.8;
+}
+
+.buttons{
+margin-top:30px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+
+background:var(--accent);
+color:white;
+padding:14px 26px;
+border-radius:14px;
+text-decoration:none;
+font-weight:500;
+transition:.25s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* SECTIONS */
+
+section{
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:18px;
+transition:.25s;
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+background:var(--soft);
+}
+
+h2{
+color:var(--accent);
+margin-bottom:20px;
+}
+
+/* CONTACT */
+
+.contact{
+
+background:white;
+border-radius:20px;
+padding:40px;
+}
+
+/* MAP */
+
+.map{
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* TOUR */
+
+.tour{
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* FACEBOOK BUTTON */
+
+.facebook{
+
+display:inline-block;
+margin-top:20px;
+background:#1877F2;
+color:white;
+padding:12px 22px;
+border-radius:12px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:16px 18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+padding:40px;
+opacity:.7;
+}
+
+/* SCROLL ANIMATION */
+
+.fade-in{
+opacity:0;
+transform:translateY(40px);
+transition:opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#zorg">Zorg</a>
+<a href="#tour">Virtuele Tour</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<section class="hero fade-in" id="home">
+
+<img src="logo.png" class="logo">
+
+<h1>Dierenartsenpraktijk<br>Claudia Gorissen</h1>
+
+<p>
+Persoonlijke zorg en aandacht voor uw huisdier.
+Alle consulten vinden plaats op afspraak zodat ieder dier de tijd en zorg krijgt die het verdient.
+</p>
+
+<div class="buttons">
+
+<a href="tel:0433644306" class="btn">Afspraak maken</a>
+<a href="#contact" class="btn">Contact</a>
+
+</div>
+
+</section>
+
+<section id="zorg" class="fade-in">
+
+<div class="cards">
+
+<div class="card">
+
+<h2>Behandeling</h2>
+
+<p>
+Wij behandelen al onze patiënten uitsluitend op afspraak zodat ieder dier rustig onderzocht kan worden.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Medicatie & Voer</h2>
+
+<p>
+Medicatie, preventieve middelen en dieetvoer kunnen eenvoudig besteld en later afgehaald worden in de praktijk.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Spoed</h2>
+
+<p>
+
+Binnen openingstijden:<br>
+043 364 4306<br>
+06 15 00 73 75
+
+<br><br>
+
+Buiten openingstijden:<br>
+0900-8765444
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="tour" class="fade-in">
+
+<h2>Virtuele tour van de praktijk</h2>
+
+<div class="tour">
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!4v1690000000000!6m8!1m7!1sCAoSLEFGMVFpcE5...!2m2!1d50.8870!2d5.7416!3f0!4f0!5f0.7820865974627469"
+width="100%"
+height="500"
+style="border:0"
+loading="lazy"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+<section class="fade-in">
+
+<h2>Locatie</h2>
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps?q=Sint+Josephstraat+101+Meerssen&output=embed"
+width="100%"
+height="400"
+style="border:0"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<section id="contact" class="fade-in">
+
+<div class="contact">
+
+<h2>Contact</h2>
+
+<p>
+
+Dierenartsenpraktijk Claudia Gorissen<br>
+Sint Josephstraat 101<br>
+6231 ED Meerssen
+
+</p>
+
+<p>
+
+Tel: 043 364 4306<br>
+Whatsapp: 06 15 00 73 75<br>
+Email: dap@claudiagorissen.nl
+
+</p>
+
+<p>
+
+<strong>Openingstijden</strong><br>
+
+Maandag t/m vrijdag<br>
+09:00 – 13:00<br>
+15:00 – 19:00
+
+</p>
+
+<a class="facebook" href="https://www.facebook.com/photo/?fbid=863150532904584&set=a.161699493049695" target="_blank">
+Volg ons op Facebook
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© Dierenartsenpraktijk Claudia Gorissen
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/31615007375">💬</a>
+
+<script>
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+}
+
+});
+
+});
+
+document.querySelectorAll(".fade-in").forEach(el => {
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+</html>
